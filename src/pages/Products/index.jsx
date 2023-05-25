@@ -17,7 +17,7 @@ const index = () => {
                     : mainProd.parentProductContent}
                 </p>
                 <NavLink
-                  to={mainProd.parentProductHref}
+                  to={mainProd.parentProductTitle}
                   className="btn btn-dark text-white"
                 >
                   Read More
@@ -28,7 +28,7 @@ const index = () => {
                   {mainProd.childProducts.map((childProd, childProdIndex) => (
                     <Col lg={4} className="mb-4" key={childProdIndex}>
                       <NavLink
-                        to={childProd.href}
+                        to={mainProd.parentProductTitle + "/" + childProd.title}
                         className="text-decoration-none text-black"
                       >
                         <Card>

@@ -1,18 +1,17 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { products } from "../data";
 import { NavLink, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 const ChildProductDetails = () => {
-  const { parentProduct } = useParams();
-  const [parentProductData, setParentProductData] = useState(null);
-
-  useEffect(() => {
-    const data = products.find(
-      (prod) => prod.parentProductTitle === parentProduct
-    );
-    setParentProductData(data);
-  }, [parentProduct]);
+  const { parentProduct, childProduct } = useParams();
+  console.log(
+    "🚀 ~ file: index.jsx:7 ~ ChildProductDetails ~ parentProduct:",
+    parentProduct
+  );
+  console.log(
+    "🚀 ~ file: index.jsx:7 ~ ChildProductDetails ~ childProduct:",
+    childProduct
+  );
 
   return (
     <>
