@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { NavLink } from "react-router-dom";
 
 const index = () => {
   return (
@@ -93,81 +94,97 @@ const index = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="w-100 justify-content-between">
-              <Nav.Link href="/" className="ps-0">
+              <NavLink to="/" className="nav-link ps-0">
                 Home
-              </Nav.Link>
-              <Nav.Link href="/about">About Us</Nav.Link>
-              <Nav.Link href="/pick-to-light">Pick To Light</Nav.Link>
+              </NavLink>
+              <NavLink to="/about" className="nav-link">
+                About Us
+              </NavLink>
+              <NavLink to="/pick-to-light" className="nav-link">
+                Pick To Light
+              </NavLink>
 
               {/* products */}
               <NavDropdown title="Products" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/products">Products</NavDropdown.Item>
-                <NavDropdown.Item href="/retail-electronics">
+                <NavLink to="/products" className="dropdown-item">
+                  Products
+                </NavLink>
+                <NavLink to="/retail-electronics" className="dropdown-item">
                   Retail Electronics
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/electronic-paper">
+                </NavLink>
+                <NavLink to="/electronic-paper" className="dropdown-item">
                   Electronic Paper
-                </NavDropdown.Item>
+                </NavLink>
               </NavDropdown>
 
               {/* solutions */}
               <NavDropdown title="Solutions" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/solutions">Solutions</NavDropdown.Item>
-                <NavDropdown.Item href="/retail-electronics">
+                <NavLink to="/solutions" className="dropdown-item">
+                  Solutions
+                </NavLink>
+                <NavLink to="/retail-electronics" className="dropdown-item">
                   Retail Electronics
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/electronic-paper">
+                </NavLink>
+                <NavLink to="/electronic-paper" className="dropdown-item">
                   Electronic Paper
-                </NavDropdown.Item>
+                </NavLink>
               </NavDropdown>
 
               {/* service */}
               <NavDropdown title="Services" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/services">Services</NavDropdown.Item>
-                <NavDropdown.Item href="/download-technical-documents">
+                <NavLink to="/services" className="dropdown-item">
+                  Services
+                </NavLink>
+                <NavLink to="/download" className="dropdown-item">
                   Download Technical Documents
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/simple-purchasing">
+                </NavLink>
+                <NavLink to="/simple-purchasing" className="dropdown-item">
                   Simple Purchasing
-                </NavDropdown.Item>
+                </NavLink>
               </NavDropdown>
 
               {/* blogs */}
               <NavDropdown title="Blogs" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/blogs">Blogs</NavDropdown.Item>
-                <NavDropdown.Item href="/company-news">
+                <NavLink to="/blogs" className="dropdown-item">
+                  Blogs
+                </NavLink>
+                <NavLink to="/company-news" className="dropdown-item">
                   Company News
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/industry-news">
+                </NavLink>
+                <NavLink to="/industry-news" className="dropdown-item">
                   Industry News
-                </NavDropdown.Item>
+                </NavLink>
               </NavDropdown>
 
               {/* cases */}
               <NavDropdown title="Cases" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/cases">Cases</NavDropdown.Item>
-                <NavDropdown.Item href="/sertag-europe">
+                <NavLink to="/cases" className="dropdown-item">
+                  Cases
+                </NavLink>
+                <NavLink to="/sertag-europe" className="dropdown-item">
                   Sertag Europe
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/sertag-china">
+                </NavLink>
+                <NavLink to="/sertag-china" className="dropdown-item">
                   Sertag China
-                </NavDropdown.Item>
+                </NavLink>
               </NavDropdown>
 
               {/* faq */}
               <NavDropdown title="FAQ" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/faq">FAQ</NavDropdown.Item>
-                <NavDropdown.Item href="/sertag-wifi">
+                <NavLink to="/faq" className="dropdown-item">
+                  FAQ
+                </NavLink>
+                <NavLink to="/wifi" className="dropdown-item">
                   Sertag Wifi
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/sertag-bluetooth">
+                </NavLink>
+                <NavLink to="/bluetooth" className="dropdown-item">
                   Sertag Bluetooth
-                </NavDropdown.Item>
+                </NavLink>
               </NavDropdown>
 
-              <Nav.Link href="/contact" className="pe-0">
+              <NavLink to="/contact" className="nav-link pe-0">
                 Contact Us
-              </Nav.Link>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

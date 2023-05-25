@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
-const index = () => {
+const index = ({ title }) => {
   return (
     <>
       <Container
@@ -14,8 +14,8 @@ const index = () => {
         }}
       >
         <Container>
-          <h1 className="text-center text-white fw-bold">Contact Us</h1>
-          <ul className="d-flex justify-content-center align-items-center gap-1 list-inline mt-3">
+          <h1 className="text-center text-white fw-bold">{title}</h1>
+          {/* <ul className="d-flex justify-content-center align-items-center gap-1 list-inline mt-3">
             <li>
               <NavLink to="/" className="text-decoration-none text-white">
                 Home
@@ -23,7 +23,7 @@ const index = () => {
             </li>
             <li className="text-white">/</li>
             <li className="text-white">Contact</li>
-          </ul>
+          </ul> */}
         </Container>
       </Container>
     </>

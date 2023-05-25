@@ -6,7 +6,7 @@ import MoreSolutions from "../../components/MoreSolutions";
 const index = () => {
   return (
     <>
-      <PageHeadingBanner />
+      <PageHeadingBanner title="Contact Us" />
 
       <Container className="py-5">
         <Row>
