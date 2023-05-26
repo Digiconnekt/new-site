@@ -24,6 +24,40 @@ export const products = [
         title:
           "Sertag Digital Price Tags Low Power 1.54 inch SETR0154R For Supermarket",
         href: "#",
+        details: [
+          {
+            key: "Categories",
+            value: "Retail Electronic Shelf labels Solution",
+          },
+          {
+            key: "Brand",
+            value: "Sertag Electronic shelf labels Manufacturer",
+          },
+          {
+            key: "Model",
+            value: "SETR0154R",
+          },
+        ],
+        features: [
+          "Cloud or local Server based options.",
+          "Communication band is 433 Mhz.",
+          "E-Paper displays,152x152 pixels full graphic.",
+          "Perfect for the retails, warehouses and logistics management.",
+        ],
+        parameters: [
+          {
+            key: "Model",
+            value: "SETR0420N",
+          },
+          {
+            key: "Screen Size",
+            value: "1.54 inch",
+          },
+          {
+            key: "Display Resolution",
+            value: "152*152",
+          },
+        ],
       },
       {
         img: "https://icdn.tradew.com/file/201807/1573002/png/7658547.png?x-oss-process=image/resize,m_pad,l_400/quality,Q_90",
