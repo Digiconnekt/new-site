@@ -89,7 +89,11 @@ const index = () => {
       {/* middle bar end (logo) */}
 
       {/* bottom bar start (menu) */}
-      <Navbar bg="light" className="d-none d-lg-block">
+      <Navbar
+        bg="light"
+        className="d-none d-lg-block position-sticky top-0"
+        style={{ zIndex: "99999" }}
+      >
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -105,30 +109,14 @@ const index = () => {
               </NavLink>
 
               {/* products */}
-              <NavDropdown title="Products" id="basic-nav-dropdown">
-                <NavLink to="/products" className="dropdown-item">
-                  Products
-                </NavLink>
-                <NavLink to="/retail-electronics" className="dropdown-item">
-                  Retail Electronics
-                </NavLink>
-                <NavLink to="/electronic-paper" className="dropdown-item">
-                  Electronic Paper
-                </NavLink>
-              </NavDropdown>
+              <NavLink to="/products" className="nav-link">
+                Products
+              </NavLink>
 
               {/* solutions */}
-              <NavDropdown title="Solutions" id="basic-nav-dropdown">
-                <NavLink to="/solutions" className="dropdown-item">
-                  Solutions
-                </NavLink>
-                <NavLink to="/retail-electronics" className="dropdown-item">
-                  Retail Electronics
-                </NavLink>
-                <NavLink to="/electronic-paper" className="dropdown-item">
-                  Electronic Paper
-                </NavLink>
-              </NavDropdown>
+              <NavLink to="/solutions" className="nav-link">
+                Solutions
+              </NavLink>
 
               {/* service */}
               <NavDropdown title="Services" id="basic-nav-dropdown">
