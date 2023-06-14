@@ -3,6 +3,7 @@ import MoreSolutions from "../../components/MoreSolutions";
 import SixBlockStrip from "./SixBlockStrip";
 import ThreeBlockStrip from "./ThreeBlockStrip";
 import { NavLink } from "react-router-dom";
+import LazyLoad from "react-lazy-load";
 
 const index = () => {
   return (
@@ -32,18 +33,22 @@ const index = () => {
 
         <Row className="mt-5">
           <Col md={6}>
-            <Image
-              fluid
-              src="https://icdn.tradew.com/file/201807/1573002/png/7635022.png?x-oss-process=image/format,webp"
-              alt=""
-            />
+            <LazyLoad height={762}>
+              <Image
+                fluid
+                src="https://icdn.tradew.com/file/201807/1573002/png/7635022.png?x-oss-process=image/format,webp"
+                alt=""
+              />
+            </LazyLoad>
           </Col>
           <Col md={6}>
-            <Image
-              fluid
-              src="https://icdn.tradew.com/file/201807/1573002/png/7635023.png?x-oss-process=image/format,webp"
-              alt=""
-            />
+            <LazyLoad height={762}>
+              <Image
+                fluid
+                src="https://icdn.tradew.com/file/201807/1573002/png/7635023.png?x-oss-process=image/format,webp"
+                alt=""
+              />
+            </LazyLoad>
           </Col>
         </Row>
       </Container>
